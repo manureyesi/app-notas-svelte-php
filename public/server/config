@@ -1,0 +1,10 @@
+[General Settings]
+appUrl = "https://notas.reyesi.com.es";
+siteName = "NOTAS";
+logo = "logo.png";
+
+[Database Settings]
+dbHost = "127.0.0.1:3306";
+dbUser = "notas";
+dbPassword = "abc1234.";
+dbName = "NOTAS";
