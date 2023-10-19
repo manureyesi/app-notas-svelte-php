@@ -3,7 +3,7 @@
     include "crud.php";
 
     // Comprobar authorization
-    if (!isset($_POST["Authorization"]) && $_POST["Authorization"] == "abc123.") {
+    if (!isset($_POST["Authorization"]) || $_POST["Authorization"] == "abc123.") {
         $data = array("error" => "El campo Authorización non é correcto", "exception" => "");
     } else {
 
