@@ -10,6 +10,17 @@ function dbConnect() {
     }
 }
 
+// Actualizar nota
+function actualizarNota ($contenido, $terminado, $id) {
+
+    $dbLink = dbConnect();
+
+    $query = $dbLink->prepare('UPDATE elementos_listas SET contenido = ?, terminado = ? WHERE id = ?');
+    $array = array("$contenido", $terminado, $id);
+    $query->execute($array);
+
+}
+
 function createNota($nombreNota) {
 
     $dbLink = dbConnect();
